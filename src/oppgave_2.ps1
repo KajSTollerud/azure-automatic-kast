@@ -5,4 +5,4 @@ param (
 )
 
 Write-Host "Hei $Navn"
-I løv :coffe: :pizza:, and :dancer:.
+Write-Host "I løv :coffe: :pizza:, and :dancer:."
