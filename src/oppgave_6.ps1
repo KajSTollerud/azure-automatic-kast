@@ -75,7 +75,7 @@ $meg = $kortstokk[0..1]
 # Fjern 2 kort fra kortstokken som er gitt til $meg
 $kortstokk = $kortstokk[2..($kortstokk.Count -1)]
 
-$magnus = $kortstokk[0...1]
+$magnus = $kortstokk[0..1]
 $kortstokk = $kortstokk[2..($kortstokk.Count -1)]
 
 Write-Host "meg: $(kortstokkTilStreng -kortstokk $meg)"
