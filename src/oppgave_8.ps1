@@ -110,7 +110,7 @@ elseif ((sumPoengKortstokk -kortstokk $magnus) -eq $blackjack) {
 }
 # ...
 
-while ((sumPoengKortstokk -kortstokk $meg<) -lt 17) {
+while ((sumPoengKortstokk -kortstokk $meg) -lt 17) {
     $meg += $kortstokk[0]
     $kortstokk = $kortstokk[1..($kortstokk.Count -1)]
 }
