@@ -1,8 +1,8 @@
-name: oppgave 15
+name: oppgave 16
 on:
   push:
     paths:
-    - .github/workflows/oppgave15.yml
+    - .github/workflows/oppgave16.yml
   workflow_dispatch:
 jobs:
   job1:
@@ -17,3 +17,9 @@ jobs:
 
       - name: Run Blackjack script file
         run: ./src/oppgave_10.ps1
+        
+      - name: Login via Az module
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZ_Cred }}
+          enable-AzPSSession: true
